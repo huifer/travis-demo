@@ -14,4 +14,9 @@ public class RteTest {
 	public void te2() {
 		Assert.assertEquals(true, Rte.hh(0));
 	}
+
+	@Test
+	public void error() {
+		int i = 1 / 0;
+	}
 }
