@@ -13,4 +13,5 @@ cache:
     - $HOME/.m2
 after_success:
   - mvn clean test
-  - bash <(curl -s https://codecov.io/bash) -t y5kxbcxoRFn0DIefnIEjfftqg9tzGaEbF
+  - bash <(curl -s https://codecov.io/bash)
+  - mvn coveralls:report -DrepoToken="y5kxbcxoRFn0DIefnIEjfftqg9tzGaEbF"
