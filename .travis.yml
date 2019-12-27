@@ -15,4 +15,3 @@ after_success:
   - mvn clean test
   - bash <(curl -s https://codecov.io/bash)
   - mvn clean cobertura:cobertura coveralls:report
-  - mvn coveralls:report -DrepoToken="y5kxbcxoRFn0DIefnIEjfftqg9tzGaEbF"
