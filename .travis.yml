@@ -13,3 +13,4 @@ cache:
     - $HOME/.m2
 after_success:
   - mvn clean test
+  - bash <(curl -s https://codecov.io/bash)
