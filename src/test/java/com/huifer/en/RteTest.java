@@ -7,6 +7,6 @@ public class RteTest {
 
 	@Test
 	public void te() {
-		Assert.assertEquals(true, Rte.hh(1));
+		Assert.assertEquals(false, Rte.hh(1));
 	}
 }
