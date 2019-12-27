@@ -12,4 +12,8 @@ cache:
   directories:
     - $HOME/.m2
 after_success:
-  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
+  - mvn clean test
+  ## 生成测试报告
+  - mvn jacoco:report
+  ## 获取travis解密的token ,并调用coveralls-plugin上传报告
+  - mvn coveralls:report -DrepoToken="y5kxbcxoRFn0DIefnIEjfftqg9tzGaEbF"
